@@ -240,6 +240,70 @@
             font-style: normal;
         }
         
+        .compass-diagram {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: var(--sand-light);
+            border-radius: 8px;
+        }
+
+        .compass-row {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .compass-cell {
+            width: 140px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        .compass-cell.center {
+            background: var(--sage);
+            border-radius: 6px;
+            color: var(--sand-light);
+        }
+
+        .element-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.25rem;
+        }
+
+        .element-item {
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .element-type {
+            font-size: 0.75rem;
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        .center-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.25rem;
+        }
+
+        .center-text {
+            font-size: 0.8rem;
+            line-height: 1.3;
+        }
+
         .section-divider {
             height: 2px;
             background: linear-gradient(to right, transparent, var(--sand), transparent);
@@ -343,9 +407,49 @@
                     </tr>
                 </tbody>
             </table>
-            
+
+            <h3>The Setup Diagram</h3>
+            <p>Use your compass app to find true North. Place your cleansing setup on a flat, safe surface. Align North on the setup with true North on your compass.</p>
+
+            <div class="compass-diagram">
+                <div class="compass-row">
+                    <div class="compass-cell"></div>
+                    <div class="compass-cell north">
+                        <div class="element-label">NORTH</div>
+                        <div class="element-item">🕯️ CANDLE</div>
+                        <div class="element-type">(Fire)</div>
+                    </div>
+                    <div class="compass-cell"></div>
+                </div>
+                <div class="compass-row">
+                    <div class="compass-cell west">
+                        <div class="element-label">WEST</div>
+                        <div class="element-item">🪔 INCENSE</div>
+                        <div class="element-type">(Air)</div>
+                    </div>
+                    <div class="compass-cell center">
+                        <div class="center-label">CENTER</div>
+                        <div class="center-text">What you are<br>cleansing</div>
+                    </div>
+                    <div class="compass-cell east">
+                        <div class="element-label">EAST</div>
+                        <div class="element-item">💧 WATER</div>
+                        <div class="element-type">(Water)</div>
+                    </div>
+                </div>
+                <div class="compass-row">
+                    <div class="compass-cell"></div>
+                    <div class="compass-cell south">
+                        <div class="element-label">SOUTH</div>
+                        <div class="element-item">🧂 SALT</div>
+                        <div class="element-type">(Earth)</div>
+                    </div>
+                    <div class="compass-cell"></div>
+                </div>
+            </div>
+
             <div class="section-divider"></div>
-            
+
             <h2>What You'll Need</h2>
             <ul>
                 <li>Salt in a small container (about 1 teaspoon)</li>
